@@ -1,7 +1,9 @@
 # This workflow builds and unit tests both main Java API and also build/data tools for metadata generation.
 
 name: Testing Java API
-on: pull_request
+on:
+  workflow_dispatch:
+  "pull_request":
 permissions:
   contents: read
 
